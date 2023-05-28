@@ -8,12 +8,12 @@ const Child = ({data,setData}) => {
    }
 
   return (
-    <div className='child'>
+    <div>
         <h1>Child Component</h1>
       <div>
-         <ul>
+         <ul className='child'>
          {data.map((value,index)=>(
-             <li className='child li' key={index}>
+            <li key={index}>
                 {value.name} - ${value.price} 
                 <button onClick={() => handleRemove(index)}>Remove</button>
             </li>

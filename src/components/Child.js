@@ -13,7 +13,7 @@ const Child = ({data,setData}) => {
       <div>
          <ul>
          {data.map((value,index)=>(
-             <li key={index} className='child li'>
+             <li key={index}>
                 {value.name} - ${value.price} 
                 <button onClick={() => handleRemove(index)}>Remove</button>
             </li>

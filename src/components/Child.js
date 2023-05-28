@@ -11,11 +11,10 @@ const Child = ({data,setData}) => {
     <div className='child'>
         <h1>Child Component</h1>
       <div>
-      
          <ul>
          {data.map((value,index)=>(
-             <li key={index}>
-                {value.name}-${value.price} 
+             <li key={index} className='child li'>
+                {value.name} - ${value.price} 
                 <button onClick={() => handleRemove(index)}>Remove</button>
             </li>
         ))}
